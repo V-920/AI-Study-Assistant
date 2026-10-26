@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Buddy</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="body">
+    
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#summarize-section">Summarize</a>
+        <a href="#explain-section">Explain</a>
+        <a href="#quiz-section">Quiz</a>
+    </nav>
+    <section id="home">
+        <h1 class="text">AI Study Assistant</h1>
+        <h2 class="text">Summarize notes, explain concepts, generate quizzes, and test your understanding.</h2>
+    </section>
+    <section id="summarize-section">
+    <textarea id="input" placeholder="Enter your notes here..."></textarea>
+    <button id="Button">Summarize</button>
+    <br>
+    <section id="results">
+        <p id="confirm"></p>
+        <p id="summary"></p>
+    </section>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="explain-section">
+    <h2 class="text">Explain a Concept</h2>
+
+    <input 
+        type="text"
+        id="topic-input"
+        placeholder="Enter a topic, e.g. Python loops"
+    >
+
+    <button id="explain-button">Explain</button>
+
+    <p id="explain-status"></p>
+
+    <div id="explanation"></div>
+    </section>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="quiz-section">
+    <h2 class="text">Generate a Quiz</h2>
+
+    <textarea id="quiz-input" placeholder="Paste your study notes here..."></textarea>
+
+    <button id="quiz-button">Generate Quiz</button>
+
+    <p id="quiz-status"></p>
+
+    <div id="quiz-output"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
